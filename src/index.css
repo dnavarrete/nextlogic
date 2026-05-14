@@ -2,18 +2,32 @@
 
 @theme {
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --color-brand-50: #ecfdf5;
-  --color-brand-100: #d1fae5;
-  --color-brand-200: #a7f3d0;
-  --color-brand-300: #6ee7b7;
-  --color-brand-400: #34d399;
-  --color-brand-500: #10b981;
-  --color-brand-600: #059669;
-  --color-brand-700: #047857;
-  --color-brand-800: #065f46;
-  --color-brand-900: #064e3b;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --color-nex-green: #00C853;
+  --color-nex-lime: #B2FF59;
+  --color-nex-dark: #14532d;
+  --color-nex-dark-surface: #166534;
+  --color-nex-surface: #fafafa;
+  --color-nex-border: #e5e5e5;
+  --color-nex-muted: #737373;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out forwards;
+}
+
+.grid-bg {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 80px 80px;
 }

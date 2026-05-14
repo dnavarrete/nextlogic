@@ -13,7 +13,7 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans antialiased">
       {/* Nav */}
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md border-b border-nex-border' : ''}`}>
+      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md border-b border-nex-border' : ''}`} aria-label="Navegación principal">
         <div className="flex justify-between items-center px-6 lg:px-12 py-5 max-w-[1400px] mx-auto">
           <a href="#" className="relative -my-4">
             <img src="/logo.svg" alt="Nexlogic" className="h-24" />
